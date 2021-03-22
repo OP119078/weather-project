@@ -14,45 +14,46 @@
 
 <body>
     <div class="container">
+        <div class="weather-app">
 
-        <div class="search-bar">
-            <form id="city-search-bar">
-                <input type="text" placeholder="Where are you?" id="search-bar-input" class="search-bar-input"
-                    autofocus=on>
-                <input type="submit" value="Search" type="button" class="search-button">
-            </form>
-            <button class="btn search-button" id="current-location-btn"> 📍 </button>
-            <button class="change-degree-unit btn" id="celsius-button">
-                °C
-            </button>
-            <button class="change-degree-unit btn" id="farenheit-button">
-                °F
-            </button>
-        </div>
-        <br />
+            <div class="search-bar">
+                <form id="city-search-bar">
+                    <input type="text" placeholder="Where are you?" id="search-bar-input" class="search-bar-input"
+                        autofocus=on>
+                    <input type="submit" value="Search" type="button" class="search-button">
+                </form>
+                <button class="btn search-button" id="current-location-btn"> 📍 </button>
+                <button class="change-degree-unit btn" id="celsius-button">
+                    °C
+                </button>
+                <button class="change-degree-unit btn" id="farenheit-button">
+                    °F
+                </button>
+            </div>
+            <br />
+            <div class="col-6 today card card-body">
+                <div class="row">
+                    <div class="col-8">
+                        <h6 id="today-date-time">
+                        </h6>
+                        <h1 id="current-city"></h1>
 
-
-        <div class="col-6 today card card-body">
-            <div class="row">
-                <div class="col-8">
-                    <h6 id="today-date-time">
-                    </h6>
-                    <h1 id="current-city"></h1>
-
-                    <h2>
-                        <span id="current-temperature">°C</span> | <span id="description"></span>
-                    </h2>
-                </div>
-                <div class="col-4 extra-info">
-                    Humidity: <span id="humidity"></span>%
-                    <br />
-                    Wind: <span id="wind-speed"></span> km/h
+                        <h2>
+                            <span id="current-temperature">°C</span> | <span id="description"></span>
+                        </h2>
+                    </div>
+                    <div class="col-4 extra-info">
+                        Humidity: <span id="humidity"></span>%
+                        <br />
+                        Wind: <span id="wind-speed"></span> km/h
+                    </div>
                 </div>
             </div>
+            <small><a href="https://github.com/OP119078/weather-project" target="_blank"> Open-source
+                    code</a> by Olivia
+                Peacock</small>
         </div>
-        <small><a href="https://github.com/OP119078/weather-project" target="_blank"> Open-source
-                code</a> by Olivia
-            Peacock</small>
+
     </div>
 
 

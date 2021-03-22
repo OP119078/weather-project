@@ -22,6 +22,10 @@ h5 {
   font-size: 15px;
 }
 
+.weather-app {
+  max-width: 600px;
+}
+
 .btn {
   font-size: 13px;
 }
@@ -63,4 +67,8 @@ h5 {
 
 #description {
   text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
 }
