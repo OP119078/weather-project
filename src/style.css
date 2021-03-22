@@ -73,3 +73,7 @@ h5 {
 a {
   text-decoration: none;
 }
+
+#degrees-celsius {
+  font-size: 18px;
+}
