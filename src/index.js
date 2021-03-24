@@ -51,9 +51,7 @@ celsiusButton.addEventListener("click", changeToCelsius);
 
 
 function showWeather(response) {
-   console.log(response);
-   let currentTemperature = Math.round(response.data.main.temp);
-   document.querySelector("#current-temperature").innerHTML = `${currentTemperature}°C`
+   document.querySelector("#current-temperature").innerHTML = `${Math.round(response.data.main.temp)}°C`
    document.querySelector("#description").innerHTML = response.data.weather[0].description;
    document.querySelector("#humidity").innerHTML = response.data.main.humidity;
    document.querySelector("#wind-speed").innerHTML = Math.round((response.data.wind.speed) * 3.6);
