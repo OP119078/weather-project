@@ -54,13 +54,10 @@ function showWeather(response) {
    console.log(response);
    let currentTemperature = Math.round(response.data.main.temp);
    document.querySelector("#current-temperature").innerHTML = `${currentTemperature}°C`
-   document.querySelector("#description").innerHTML = response.data.weather[0].main;
+   document.querySelector("#description").innerHTML = response.data.weather[0].description;
    document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-   let windSpeed = document.querySelector("#wind-speed");
-   let formattedWindSpeed = Math.round((response.data.wind.speed) * 3.6);
-   windSpeed.innerHTML = formattedWindSpeed;
-   let currentLocationCity = document.querySelector("#current-city");
-   currentLocationCity.innerHTML = response.data.name;
+   document.querySelector("#wind-speed").innerHTML = Math.round((response.data.wind.speed) * 3.6);
+   document.querySelector("#current-city").innerHTML = response.data.name;
 }
 
 function search(city) {
